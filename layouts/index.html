@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color:#E7E7E7;
+            display: grid;
+            grid-template-areas: "header header header header"
+                                    "nav nav nav nav"
+                                    "main main main main"
+                                    "section section section aside"
+                                    "article article article aside"
+                                    "footer footer footer footer";
+        }
+        header {
+            background-color: #FFFFFF;
+            grid-area: header;
+        }
+        nav {
+            background-color: #FFFFFF;
+            grid-area: nav;
+        }
+        main {
+            background-color: #FFFFFF;
+            grid-area: main;
+        }
+        section {
+            background-color: #FFFFFF;
+            grid-area: section;
+        }
+        article {
+            background-color: #FFFFFF;
+            grid-area: article;
+        }
+        aside {
+            background-color: #FFFFFF;
+            grid-area: aside;
+        }
+        footer {
+            background-color: #FFFFFF;
+            grid-area: footer;
+        }
+        .margin {
+            margin: 10px 10px;
+        }
+        .padding {
+            padding: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="margin padding">HEADER</header>
+    <nav class="margin padding">NAV</nav>
+    <main class="margin padding">MAIN</main>
+    <section class="margin padding">SECTION</section>
+    <article class="margin padding">ARTICLE</article>
+    <aside class="margin padding">ASIDE</aside>
+    <footer class="margin padding">FOOTER</footer>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <title>HTML Practice</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="11">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="default-style" content="the document's preferred stylesheet">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="MD. Rezaul Islam">
+  <meta name="generator" content="FrontPage 4.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/all.css" rel="stylesheet">
+  <!--load all styles -->
+
+  <style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        display: grid;
+        grid-template-areas: 'header'
+                         'main'
+                         'footer';
+    }
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'article aside';
+    }
+    .grid-container-article {
+        display: grid;
+        grid-template-areas: 'hb ab'
+                                'sb ab';
+    }
+    .heading-box {
+        grid-area: hb;
+    }
+    .section-box {
+        grid-area: sb;
+    }
+    .aside-box {
+        grid-area: ab;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        grid-area: header;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        grid-area: footer;
+    }
+    main {
+        grid-area: main;
+    }
+    article {
+        grid-area: article;
+    }
+    aside {
+        grid-area: aside;
+    }
+    .ml-10 {
+        margin-left: 10px;
+    }
+    .mr-10 {
+        margin-right: 10px;
+    }
+    .flex-container-column {
+        display: flex;
+        flex-direction: column;
+    }
+    .align-items-center {
+        align-items: center;
+    }
+    .align-items-end {
+        align-items:flex-end;
+    }
+  </style>
+
+  <script defer src="js/all.js"></script>
+  <!--load all styles -->
+
+  <base href="https://www.w3schools.com" target="_blank">
+
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <!--START of User Code-->
+  <header>
+    <div class="ml-10 mr-10">
+        <i class="fab fa-dev fa-5x"></i>
+    </div>
+    <nav class="ml-10 mr-10">
+      <a href="/html/">HTML</a> |
+      <a href="/css/">CSS</a> |
+      <a href="/js/">JavaScript</a> |
+      <a href="/jquery/">jQuery</a> |
+      <a href="#">PRODUCTS</a> |
+      <a href="#">SHOPS</a> |
+      <a href="#">BLOG</a>
+    </nav>
+    <div class="ml-10 mr-10">
+        <div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+    <div class="ml-10 mr-10 flex-container-column align-items-center">
+      <div>
+        <i class="fas fa-phone fa-2x"></i>
+      </div>
+      <div>
+        555 32 16 12
+      </div>
+    </div>
+  </header>
+  <main class="grid-container">
+    <article class="grid-container-article ml-10 mr-10">
+      <div class="heading-box">
+        <h3>ALL ABOUT OUR PRODUCTS</h3>
+        <h4>Summery</h4>
+      </div>
+      <div class="section-box">
+        <section>
+            <h3>USE 1 FOR OUR PRODUCTS</h3>
+            <h4>Summery</h4>
+          </section>
+          <section>
+            <h3>USE 2 FOR OUR PRODUCTS</h3>
+            <h4>Summery</h4>
+          </section>
+          <section>
+            <h3>USE 3 FOR OUR PRODUCTS</h3>
+            <h4>Summery</h4>
+          </section>
+          <details>
+            <summary>Summery: Defines a visible heading for a details element</summary>
+            Details: Defines additional details that the user can view or hide
+          </details>
+      </div>
+      <div class="aside-box">
+        <aside>
+            <h4>SUPER CLIENT REVIEWS</h4>
+            <p>Client recommendations about the product</p>
+        </aside>
+        <aside>
+            <h4>WHAT THE PRESS SAY</h4>
+            <p>Summery of independent journalist evaluation of the product (LINK)</p>
+        </aside>
+      </div>
+    </article>
+    <aside class="ml-10 mr-10">
+      <h4>ABOUT OUR INDUSTRY</h4>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, non! Laboriosam excepturi eos iusto vitae suscipit a dignissimos, sapiente corporis, quia libero assumenda voluptates neque dolores velit enim blanditiis natus.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione perferendis obcaecati illum totam. Sint doloribus nihil, labore sed modi dolores quos explicabo nemo inventore adipisci, eveniet quae molestias alias velit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus in eos repudiandae ea recusandae quaerat excepturi obcaecati distinctio corporis nihil, voluptatum nemo odio expedita ratione cumque totam dolores. Quo, nisi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam temporibus harum iste eos saepe veniam fugit vitae eaque non adipisci consequuntur, ipsum iure esse repellendus obcaecati quos fugiat pariatur numquam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cum aperiam qui libero magnam ducimus sapiente pariatur, reiciendis voluptatum soluta, deserunt mollitia saepe velit. Velit in quisquam tempora eaque voluptatum.
+      </p>
+    </aside>
+  </main>
+  <footer>
+    <div class="ml-10 mr-10">
+    </div>
+    <nav class="ml-10 mr-10">
+      <a href="#">JOBS</a>
+      <a href="#">CONTACT</a>
+      <a href="#">LEGAL</a>
+    </nav>
+    <nav class="ml-10 mr-10">
+      FOLLOW US:
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </nav>
+    <div class="ml-10 mr-10">
+      C<i class="far fa-copyright"></i>PYRIGHT
+    </div>
+  </footer>
+  <!--END of User Code-->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+</html>
